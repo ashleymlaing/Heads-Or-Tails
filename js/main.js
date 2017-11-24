@@ -94,6 +94,7 @@ function theyChoiceTails () {
 		$(".spinning").hide();
 		$(".coinHead").show();
 		$('.coinTails').hide();
+		$('section.coin').show();
     $('.winner').append("<p>Heads wins, Tails lose</p>");
 		historyList.push(playerChoice);
 		scorePlayerTwo = scorePlayerTwo + 1;
@@ -113,7 +114,11 @@ $('#history').on("click",function(){
 	$(".spinning").show();
 	$(".coinHead").hide();
 	$('.coinTails').hide();
+	$('ul').show();
 	historyList.forEach(function(element){
   $('ul').append("<li>"+element+"</li>");
+	setInterval(function(){
+		$('ul').hide();
+	},5000)
   })
 });

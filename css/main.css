@@ -173,7 +173,7 @@ section.coin{
 
 }
 .score.player2 {
-
+  margin-top: 53%;
 }
 .score span{
   font-size: 50px;
@@ -194,8 +194,14 @@ section.coin{
 
 }
 ul{
+  position: absolute;
+  top: 10%;
+  left: 90%;
   list-style: none;
   padding: 0;
+  /*background-color: yellow;*/
+  color: white;
+
 }
 .coinHead{
   display: none;
@@ -216,6 +222,11 @@ img{
   border-radius: 50px;
   width: 250px;
   height: 250px
+}
+#history{
+  display: block;
+  margin-top: 5%;
+  margin-left: 60%;
 }
 
 
