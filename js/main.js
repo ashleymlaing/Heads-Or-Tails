@@ -33,6 +33,7 @@ function theyChoiceHeads () {
 		$(".coinHead").show();
 		$('.coinTails').hide();
 		historyList.push(playerChoice);
+		$('section.coin').show();
     $('.winner').append("<p>Heads wins, Tails lost</p>");
 		scorePlayerOne = scorePlayerOne + 1;
 		document.getElementById('player1').innerHTML = scorePlayerOne;
@@ -40,7 +41,8 @@ function theyChoiceHeads () {
 			$('.spinning').show();
 			$('.coinTails').hide();
 			$('.coinHead').hide();
-		},6000);
+			$("section.coin").hide();
+		},4000);
 
     }
     else{
@@ -48,6 +50,7 @@ function theyChoiceHeads () {
 		$(".spinning").hide();
 		$(".coinTails").show();
 		$(".coinHead").hide();
+		$('section.coin').show();
     $('.winner').append("<p>Tails wins, Heads lost</p>");
 		historyList.push(playerChoice);
 		scorePlayerTwo = scorePlayerTwo + 1;
@@ -56,7 +59,8 @@ function theyChoiceHeads () {
 			$('.spinning').show();
 			$('.coinTails').hide();
 			$('.coinHead').hide();
-		},6000);
+			$("section.coin").hide();
+		},4000);
 
 
 
@@ -73,6 +77,7 @@ function theyChoiceTails () {
 		$(".spinning").hide();
 		$(".coinHead").hide();
 		$('.coinTails').show();
+		$('section.coin').show();
     $('.winner').append("<p>Tails wins,Heads lose</p>");
 		historyList.push(playerChoice);
 		scorePlayerOne = scorePlayerOne + 1;
@@ -81,7 +86,8 @@ function theyChoiceTails () {
 			$('.spinning').show();
 			$('.coinTails').hide();
 			$('.coinHead').hide();
-		},6000);
+			$("section.coin").hide();
+		},4000);
     }
     else{
     playerChoice = "Heads";
@@ -96,7 +102,8 @@ function theyChoiceTails () {
 			$('.spinning').show();
 			$('.coinTails').hide();
 			$('.coinHead').hide();
-		},6000);
+			$("section.coin").hide();
+		},4000);
     }
   }
 //function for when history is clicked

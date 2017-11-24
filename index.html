@@ -1,62 +1,72 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
 
-      <!-- Add your site or application content here -->
-      <div class="wrapper">
-        <h1>Pick Heads or Tails!</h1>
-        <div class="box">
-          <button id="heads">
-            Heads
-          </button>
-          <button id="tails">
-            Tails
-          </button>
-        </div>
-        <img src="img/heads.png" class="coinHead">
-        <img src="img/tails.png" class="coinTails">
-        <img src="img/CoinFlip.gif" class="spinning">
-        <p class="winner"></p>
-        <div class="box scoreboard">
-          <div class="score player1">
-            <span id="player1">0</span>
-            <p>Player 1</p>
-          </div>
-          <div class="score player2">
-            <span id="player2">0</span>
-            <p>Player 2</p>
-          </div>
-        </div>
-        <div class="box">
-          <button id="history">
-            History
-          </button>
-
-          <ul>
-
-          </ul>
-        </div>
+  <!-- Add your site or application content here -->
+  <div class="wrapper">
+    <h1>Call it: Heads or Tails?</h1>
+    <img src="img/heads.png" class="coinHead">
+    <img src="img/tails.png" class="coinTails">
+    <img src="img/CoinFlip.gif" class="spinning">
+    <div class="left">
+      <div class="score player1">
+        <span id="player1">0</span>
+        <p>Player 1</p>
       </div>
+    </div>
+    <div class="right">
+      <div class="score player2">
+        <span id="player2">0</span>
+        <p>Player 2</p>
+      </div>
+    </div>
+    <div class="choice">
+      <button id="heads">
+        Heads
+      </button>
+      <button id="tails">
+        Tails
+      </button>
+    </div>
+    <section class="coin">
+      <p class="winner"></p>
+    </section>
+  </div>
+
+  <div class="box scoreboard">
 
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+  </div>
+  <div class="box">
+    <button id="history">
+      History
+    </button>
+
+    <ul>
+
+    </ul>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>

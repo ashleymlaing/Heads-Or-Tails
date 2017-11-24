@@ -97,13 +97,70 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  background-color: black;
+}
+
+button{
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+}
+
+h1{
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+section.coin{
+  display: none;
+  width: 100%;
+  background-color: white;
+}
+
+.choice{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+
 .wrapper{
-  width:60%;
-  background: purple;
-  border: 1px solid black;
+  width:80%;
+  /*background: purple;*/
+  /*border: 1px solid black;*/
   margin: 20px auto;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
 }
+
+.left, .right{
+  /*border: 2px solid green;*/
+  width: 50%;
+  /*position: fixed;
+  top:5%;*/
+  height: 550px;
+  /*z-index: -2;*/
+}
+
+.left{
+  /*left: 10%;*/
+  background-color: purple;
+}
+
+.right{
+  /*left: 50%;*/
+  background-color: pink;
+}
+
 .box{
   width: 100%;
 }
@@ -111,6 +168,11 @@ textarea {
   width: 100px;
   height: 100px;
   border: 1px solid black;
+  margin-top: 65%;
+  margin-left: 42%;
+
+}
+.score.player2 {
 
 }
 .score span{
@@ -146,12 +208,14 @@ ul{
 
 }
 img{
-  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
   width: auto;
   margin: 10px;
   border-radius: 50px;
-  width: 90px;
-  height: 90px
+  width: 250px;
+  height: 250px
 }
 
 
